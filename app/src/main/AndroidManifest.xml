@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.VotingApp">
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".dontComeHere"></activity>
+        <activity android:name=".ShamoActivityResults" />
+        <activity android:name=".CandidateListActivity" />
+        <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

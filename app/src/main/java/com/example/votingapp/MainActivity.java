@@ -8,6 +8,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button adminBtn,userBtn;
@@ -25,7 +27,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         adminBtn.setOnClickListener(this);
         userBtn.setOnClickListener(this);
+
+        if(FirebaseAuth.getInstance().getCurrentUser() != null)
+        {
+            startActivity(new Intent(this,CandidateListActivity.class));
+        }
     }
+
 
     @Override
     public void onClick(View v) {

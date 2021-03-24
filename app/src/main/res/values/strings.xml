@@ -8,4 +8,18 @@
     <string name="EmailText">Email</string>
     <string name="PasswordText">Password</string>
     <string name="RollNumberText">Roll Number</string>
+    <string name="CandidateHeading">Candidate Details</string>
+    <string name="SelectedText">Selected.</string>
+
+    <!-- Uses in DataBase -->
+    <string name="Candidate_key">Candidates</string>
+    <string name="Sports_key">Sports Incharge</string>
+    <string name="TechincalHead_Key">Techincal Head</string>
+
+    <!-- Uses in Sports Fragment-->
+    <string name="headingSportFragment">Sports Incharge</string>
+
+    <!-- Uses in Techincal Fragment-->
+    <string name="headingTechincalFragment">Techincal Fragment</string>
+
 </resources>

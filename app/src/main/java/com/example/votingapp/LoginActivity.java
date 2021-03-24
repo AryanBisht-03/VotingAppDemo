@@ -3,14 +3,18 @@ package com.example.votingapp;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.LinearLayout;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 public class LoginActivity extends AppCompatActivity {
 
     AdminFragment FragmentAdmin;
     LinearLayout Frame;
     VoterFragment FragmentVoter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +32,9 @@ public class LoginActivity extends AppCompatActivity {
 
         if(FrameNumber==1)
         {
-            fragment.replace(R.id.Frame,FragmentAdmin);
+            //fragment.replace(R.id.Frame,FragmentAdmin);
+            startActivity(new Intent(this,dontComeHere.class));
+            finish();
         }
         else
         {
